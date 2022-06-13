@@ -1,0 +1,17 @@
+\section{The Network}
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \centering
+    \includesvg[width=0.25\textwidth]{images/star.svg}
+
+    \caption{Star network with $N = 13$ nodes.}
+    \label{fig:example}
+\end{wrapfigure}
+
+Looking at \cref{fig:example}, we can clearly that every link is connected to a node of degree 1 and the central node, with degree $N-1$. Therefore, $e_{1,N-1} = 1$ when $N > 1$ and $e_{i,j} = 0$ for any other distinct pair $i,j$.
+
+From this, we get \[
+    q_1 = \sum_{j = 1}^N e_{1,j} = e_{1,N-1} = 1
+\]
+
+Similarly, we reach $q_{N-1} = e_{1,N-1} = 1$. For $i \ne 1$ and $i \ne N-1$, however, $q_i = 0$.
