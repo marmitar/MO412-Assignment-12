@@ -8,4 +8,4 @@ Consider a star network, where a single node is connected to `N-1` degree-one no
 
 Please hand in your work as a PDF file explaining all the steps.
 
-<!-- ## [Turn in](assignment.pdf) -->
+## [Turn in](assignment.pdf)
