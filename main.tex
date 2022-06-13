@@ -95,12 +95,16 @@
 \begin{document}
     \pagestyle{main}
 
-    Consider a star network, where a single node is connected to $N-1$ degree-one nodes. Assume that $N$ is much larger than 1. Your goal is to compute the degree correlation coefficient of this network as a function of $N$, using \href{http://networksciencebook.com/chapter/7#measuring-degree}{Formulas 7.11 and 7.12 in Box 7.2} of the adopted book, following the steps:
+    Consider a star network, where a single node is connected to $N-1$ degree-one nodes. Assume that $N$ is much larger than 1. Your goal is to compute the degree correlation coefficient of this network as a function of $N$, using Formulas \hyperref[eq:coefficient]{7.11} and \hyperref[eq:variance]{7.12} in \href{http://networksciencebook.com/chapter/7#measuring-degree}{Box 7.2 of the adopted book}, following the steps:
 
     \begin{enumerate}[label={(\alph*)}]
         \item compute the numerator of 7.11; \label{item:a}
         \item compute the denominator of 7.11 using 7.12; \label{item:b}
         \item divide the result of \ref{item:a} by the result of \ref{item:b}. \label{item:c}
     \end{enumerate}
+
+    \input{texts/numerator}
+    \input{texts/denominator}
+    \input{texts/result}
 
 \end{document}
