@@ -11,7 +11,22 @@
 Looking at \cref{fig:example}, we can clearly that every link is connected to a node of degree 1 and the central node, with degree $N-1$. Therefore, $e_{1,N-1} = 1$ when $N > 1$ and $e_{i,j} = 0$ for any other distinct pair $i,j$.
 
 From this, we get \[
-    q_1 = \sum_{j = 1}^N e_{1,j} = e_{1,N-1} = 1
+    q_1 = \sum_{j = 1}^{N-1} e_{1,j} = e_{1,N-1} = 1
 \]
 
-Similarly, we reach $q_{N-1} = e_{1,N-1} = 1$. For $i \ne 1$ and $i \ne N-1$, however, $q_i = 0$.
+Similarly, we reach $q_{N-1} = e_{1,N-1} = 1$, such that \[
+    e_{1,N-1} = 1 \cdot 1 = q_1 \cdot q_{N-1}
+\]
+
+For $i \ne 1$ and $i \ne N-1$, however, \[
+    q_i = \sum_{j = 1}^{N-1} e_{i,j} = \sum_{j = 1}^{N-1} 0 = 0 = e_{i,k}
+    \,\,,\,\, \text{for all degrees $k$}
+\]
+
+Lastly,
+\begin{align*}
+    e_{1,j} = 0 = 1 \cdot 0 = q_1 \cdot q_j \,,\,\, \text{for $j \ne N-1$} \\
+    e_{i,N-1} = 0 = 0 \cdot 1 = q_i \cdot q_{N-1} \,,\,\, \text{for $i \ne 1$}
+\end{align*}
+
+Then, $e_{i,j} = q_i q_j$ for all degrees $i$, $j$.
