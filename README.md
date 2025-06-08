@@ -1,4 +1,6 @@
-# Assignment 12 - Star Network
+# Networks Sciences (MO412 / MC908) - Assignment 12
+
+## Star Network
 
 Consider a star network, where a single node is connected to `N-1` degree-one nodes. Assume that `N` is much larger than 1.  Your goal is to compute the degree correlation coefficient of this network as a function of `N`, using [Formulas 7.11 and 7.12 in Box 7.2](http://networksciencebook.com/chapter/7#measuring-degree) of the adopted book, following the steps:
 
